@@ -4,43 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>metatitle</title>
+    <title>Abonnement Astra +</title>
+    <meta name="description" content="Accédez aux meilleurs jeux avec Astra+. Jouez en avant-première et profitez d'avantages exclusifs !">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <meta property="og:title" content="Abonnement Astra +">
+    <meta property="og:description" content="Accédez aux meilleurs jeux avec Astra+. Découvrez notre abonnement premium !">
+    <meta property="og:image" content="img/logo.webp">
+    <meta property="og:url" content="#">
 </head>
 
+
+                            <!-- NAVBAR -->
 <section>
         <nav>
-            <img id="logo" src="img/logo-ban.png" alt="logo">
+            <img id="logo" src="img/logo.webp" alt="logo de l'abonnement Astra +">
             <ul>
                 <li class="menu-item"><a href="#">Acceuil</a></li>
-                <li class="menu-item"><a href="#">Acceuil</a></li>
-                <li class="menu-item"><a href="#">Acceuil</a></li>
+                <li class="menu-item"><a href="#">Consoles</a></li>
+                <li class="menu-item"><a href="#">Abonnements</a></li>
             </ul>
             <button id="bouton-connexion">se connecter</button> 
         </nav>
 </section>
 
 
+
+
 <body>
-    Boîte par-dessus l'image de fond
-    <div class="container">
-        <h2>Console Alpha</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nemo sint sed quod omnis dicta eos deserunt
-            mollitia itaque ullam vero corrupti eligendi delectus iure dolorum autem aliquam, consequuntur minus.</p>
+
+    <h1>Nos Abonnements</h1>
+                            <!-- SWIPER -->
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/swiper.png" alt="Slide 1" loading="lazy">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/swiper2.png" alt="Slide 2" loading="lazy">
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      
+
+
+                            <!-- DESCRIPTION -->
+ <div class="container">
+        <h2>Abonnement Astra +</h2>
+        <p class="desc">Sois le premier à jouer aux derniers jeux dès leur sortie. Jouez également à des centaines de jeux exceptionnels avec des amis sur console, PC et dans le cloud. De nouveaux jeux sont régulièrement ajoutés, afin que tu aies toujours une nouveauté à découvrir.</p>
         <button id="bouton-acheter">Acheter</button>
+    </div>  
+ 
+
+
+
+                            <!-- LANCEMENT SWIPER -->
+
+
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/c.js"></script>
+
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
+
+
+
+
+                            <!-- ARTICLE -->
         <div class="container-article">
             <div class="placement-article">
                 <div class="placement-article1">
                     <article>
-                        <img src="img/logo-article.PNG" alt="photo BMW Neuves">
+                        <h4>Astra +</h4>
                     </article>
                     <article>
-                        <h1>BMW Neuves.</h1>
+                        <h5> Jouez à des centaines de jeux<br> en ligne <br></h5>
+                        
+                    </article>
+                    <article>
+                        <p class="prix">A partir de <br>4.99€/mois</p>
                     </article>
                     <article>
                         <div class="boutton-3">
-                            <button>Trouver votre BMW</button>
+                            <button>Acheter</button>
                         </div>
                     </article>
                 </div>
@@ -49,14 +105,17 @@
             <div class="placement-article">
                 <div class="placement-article1">
                     <article>
-                        <img src="img/logo-article2.png" alt="photo configuration et prix">
+                        <h4>Astra VIP</h4>
                     </article>
                     <article>
-                        <h1>Configuration & prix.</h1>
+                        <h5>Jouer a tous les derniers<br>jeux en exclusivité</h5>
+                    </article>
+                    <article>
+                        <p class="prix">A partir de  <br>9.99€/mois</p>
                     </article>
                     <article>
                         <div class="boutton-3">
-                            <button>Personnalisez la vôtre</button>
+                            <button>Acheter</button>
                         </div>
                     </article>
                 </div>
@@ -65,71 +124,53 @@
             <div class="placement-article">
                 <div class="placement-article1">
                     <article>
-                        <img src="img/logo-article3.png" alt="photo BMW d'occasion">
+                        <h4>Essai gratuit</h4>
                     </article>
                     <article>
-                        <h1>BMW d'occasion</h1>
+                        <h5>Bénéficiez de 1er d'essai gratuit <br> sans engagement !</h5>
                     </article>
                     <article>
-                        <div class="boutton-3">
-                            <button>Découvrez les modèles disponibles</button>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <div class="placement-article">
-                <div class="placement-article1">
-                    <article>
-                        <img src="img/logo-article4.png" alt="photo essai ">
-                    </article>
-                    <article>
-                        <h1>Essai</h1>
+                        <p class="prix">Gratuit le 1er mois puis 4.99€/mois</p>
                     </article>
                     <article>
                         <div class="boutton-3">
-                            <button>Réservez votre essai</button>
+                            <button>Débuter votre essai</button>
                         </div>
                     </article>
                 </div>
             </div>
         </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/c.js"></script> 
 
+
+
+                            <!-- FOOTER -->
  <footer class="footer">
         <div class="footer-container">
             <div class="footer-logo-slogan">
                 <img src="img/logo.webp" alt="Logo de Poudlard" class="footer-logo">
-                <p class="footer-slogan">"L'univers magique à portée de baguette"</p>
             </div>
 
             <div class="footer-navigation">
                 <a href="/" class="footer-link">Accueil</a>
-                <a href="/cartes" class="footer-link">Mes Cartes</a>
-                <a href="/echange" class="footer-link">Échanges</a>
-                <a href="/contact" class="footer-link">Contact</a>
+                <a href="/cartes" class="footer-link">Consoles</a>
+                <a href="/echange" class="footer-link">Abonnements</a>
             </div>
 
-            <blockquote class="footer-quote">
-                "Happiness can be found, even in the darkest of times, if one only remembers to turn on the light." –
-                Albus Dumbledore
-            </blockquote>
+           
 
             <div class="footer-social">
                 <a href="https://www.linkedin.com/in/quentin-deglas-81699832b" class="social-link">
-                    <img src="img/linkedin.png" alt="linkedin" class="social-icon">
+                    <img src="img/linkedin.png" alt="linkedin" class="social-icon" loading="lazy">
                 </a>
                 <a href="https://www.instagram.com/quentin__dgls" class="social-link">
-                    <img src="img/instagram.png" alt="Instagram" class="social-icon">
+                    <img src="img/instagram.png" alt="Instagram" class="social-icon" loading="lazy">
                 </a>
                 <a href="https://github.com/SLOWIXX" class="social-link">
-                    <img src="img/github.png" alt="github" class="social-icon">
+                    <img src="img/github.png" alt="github" class="social-icon" loading="lazy">
                 </a>
                 </a>
                 <a href="https://discord.gg/CaGXXD7tpV" class="social-link">
-                    <img src="img/discord.png" alt="Discord" class="social-icon">
+                    <img src="img/discord.png" alt="Discord" class="social-icon" loading="lazy">
                 </a>
 
             </div>
